@@ -1,0 +1,16 @@
+img_height: 192
+img_width: 192
+path: "./data"
+train_folder: "data/train_images"
+test_folder: "data/test_images"
+n_jobs: 6
+weights_folder: "weights"
+model_name: "hair_segmentation_mobile.h5"
+train:
+  epochs: 50
+  batch_size: 16
+  base_lr: 0.001
+  csvfile: "train.csv"
+test:
+  batch_size: 16
+  csvfile: "valid.csv"
